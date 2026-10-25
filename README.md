@@ -1,38 +1,47 @@
-# Lab 4a - Client-Side Scripting (JavaScript)
+# Web Technology Laboratory
 
-**Name:** Muhammad Aufa bin Muslim
-**Course:** Bachelor of Web Technology
-**Subject:** BIC21203 Web Development
+## Lab 4a: Client-Side Scripting (JavaScript)
 
-## Introduction
+This lab introduces basic JavaScript programming and DOM manipulation.
 
-This repository contains the solutions for Lab 4a, which focuses on client-side scripting using JavaScript.
+### Exercises
 
-## Question 1: Interactive Text Changer
+* **Question 1:** Interactive Text Changer
+* **Question 2:** Smart Number Validator
+* **Question 3:** Dynamic Number Generator
 
-This webpage uses JavaScript to change a paragraph from "Welcome to my website!" to "Hello there!" when the user clicks the button.
+### Technologies
 
-**File:** q1.html
+* HTML
+* JavaScript
 
-## Question 2: Smart Number Validator
+## Lab 4b: JSON & jQuery
 
-This webpage checks whether the entered number is lower than, higher than, or equal to 10. It also validates invalid input.
+This lab introduces JSON data handling, the Fetch API, and jQuery DOM manipulation.
 
-**File:** q2.html
+### Exercises
 
-## Question 3: Dynamic Number Generator
+* **Question 1:** Create a JSON file containing book information.
+* **Question 2:** Use JavaScript Fetch API to load and display book information from `books.json`.
+* **Question 3:** Use jQuery to modify text, add a CSS class, and handle button clicks.
 
-This webpage uses a for loop to generate a numbered list from 1 to 5. It clears the previous list before generating new items.
+### Technologies
 
-**File:** q3.html
+* HTML
+* JSON
+* JavaScript
+* jQuery
 
-## How to Run
+## Project Files
 
-1. Download or clone this repository.
-2. Open the project folder in Visual Studio Code.
-3. Open q1.html, q2.html, or q3.html in a web browser.
-4. Test the buttons and check the output.
+### Lab 4a
 
-## GitHub Repository
+* `q1.html`
+* `q2.html`
+* `q3.html`
 
-https://github.com/ofaaaamuslim/bic21203-lab4a-javascript
+### Lab 4b
+
+* `books.json`
+* `books.html`
+* `jquery-dom.html`
