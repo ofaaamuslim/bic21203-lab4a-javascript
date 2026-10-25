@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Question 2 - Books</title>
+</head>
+<body>
+
+<h2>Book Information</h2>
+
+<div id="result">Loading books...</div>
+
+<script>
+    fetch("books.json")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Unable to load books.json");
+            }
+            return response.json();
+        })
+        .then(data => {
+            let books = data.books;
+            let result = document.getElementById("result");
+
+            result.textContent = "";
+
+            let title = document.createElement("p");
+            title.textContent = "First Book: " + books[0].title;
+            result.appendChild(title);
+
+            let author = document.createElement("p");
+            author.textContent = "Second Book Author: " + books[1].author;
+            result.appendChild(author);
+
+            books.forEach(book => {
+                let genre = document.createElement("p");
+                genre.textContent = book.title + " - " + book.genres.join(", ");
+                result.appendChild(genre);
+            });
+        })
+        .catch(error => {
+            document.getElementById("result").textContent =
+                "Error: Unable to load book information.";
+        });
+</script>
+
+
+</body>
+</html>
